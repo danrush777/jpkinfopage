@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobilität im Wandel: Jahresbilanz 2024 und Ausblick 2025 des Kfz-Gewerbes Baden-Württemberg</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mobilität im Wandel</h1>
+            <p class="subtitle">Jahresbilanz 2024 und Ausblick 2025 des Kfz-Gewerbes Baden-Württemberg</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="intro">
+            <h2 class="animated-title">Übersicht</h2>
+            <div class="quote-box">
+                <p class="quote">„Mit 1,27 Millionen Autokäufen in Baden-Württemberg zeigt sich, dass wir trotz aller Diskussionen über alternative Mobilitätskonzepte weiterhin ein Land der Autofahrer sind. Das individuelle Mobilitätsbedürfnis bleibt ungebrochen stark."</p>
+                <p class="quote-author">Birgit Leicht</p>
+            </div>
+            <p class="intro-text">Willkommen zu unserer animierten Analyse der Marktentwicklung im Automarkt Baden-Württemberg. Diese Datenvisualisierung bietet Ihnen einen detaillierten Rückblick auf das Jahr 2024 sowie eine fundierte Prognose für 2025 basierend auf dem Statement von Birgit Leicht bei unserer Jahrespressekonferenz in Stuttgart.</p>
+        </section>
+
+        <section id="year-2025" class="year-section">
+            <h2 class="animated-title">Ausblick 2025</h2>
+            <div class="highlight-box">
+                <p>„2025 wird das Jahr der Entscheidung, ob die Elektromobilität an Fahrt gewinnt oder ins Stocken gerät."</p>
+            </div>
+            <div class="split-content reverse">
+                <div class="chart-container reveal-chart">
+                    <canvas id="chart2025"></canvas>
+                </div>
+                <div class="text-content">
+                    <h3>Erwartete Trends</h3>
+                    <ul class="feature-list">
+                        <li><span class="icon">📉</span> Preiskampf bei Neuwagen mit hohen Rabatten durch Überkapazitäten</li>
+                        <li><span class="icon">💰</span> Preisdruck auf Gebrauchtwagen durch sinkende Neuwagen-Preise</li>
+                        <li><span class="icon">🔌</span> Weiterhin Kaufzurückhaltung bei E-Autos ohne neue Anreize</li>
+                        <li><span class="icon">🛠️</span> Werkstattgeschäft bleibt stabiles Fundament (87% Auslastung)</li>
+                        <li><span class="icon">⚠️</span> „Der Gebrauchtwagenhandel wird erstmals über zwei Drittel aller Fahrzeugkäufe ausmachen – ein klarer Wendepunkt."</li>
+                        <li><span class="icon">📊</span> „Die Autohersteller stecken in der Preisfalle. Jahrelang überreizte Preise treffen nun auf massive Überkapazitäten in der Produktion."</li>
+                    </ul>
+                    
+                    <h3>Prognosen</h3>
+                    <div class="key-figures count-animation">
+                        <div class="figure-box">
+                            <span class="figure">±0%</span>
+                            <span class="figure-desc">Neuwagenmarkt</span>
+                        </div>
+                        <div class="figure-box">
+                            <span class="figure">+4-5%</span>
+                            <span class="figure-desc">Gebrauchtwagenmarkt</span>
+                        </div>
+                        <div class="figure-box">
+                            <span class="figure">~910.000</span>
+                            <span class="figure-desc">Gebrauchtwagen-Umschreibungen</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="year-2024" class="year-section">
+            <h2 class="animated-title">Rückblick 2024</h2>
+            <div class="split-content">
+                <div class="text-content">
+                    <h3>Wichtigste Entwicklungen</h3>
+                    <ul class="feature-list">
+                        <li><span class="icon">•</span> Alternative Antriebe erreichten erstmals die Mehrheit im Neuwagenmarkt mit 54,8%</li>
+                        <li><span class="icon">•</span> E-Auto-Neuzulassungen sanken um 21,3% nach abruptem Förderstopp Ende 2023</li>
+                        <li><span class="icon">•</span> Der Gebrauchtwagenmarkt wuchs um 6,6% und stabilisierte die Branche</li>
+                        <li><span class="icon">•</span> Gestiegene Ausbildungszahlen: +7,7% bei Kfz-Mechatronikern</li>
+                        <li><span class="icon">•</span> Der Pkw-Bestand in Baden-Württemberg altert auf durchschnittlich 10,3 Jahre</li>
+                    </ul>
+                    
+                    <h3>Kernzahlen</h3>
+                    <div class="key-figures count-animation">
+                        <div class="figure-box">
+                            <span class="figure">404.124</span>
+                            <span class="figure-desc">Neuzulassungen</span>
+                        </div>
+                        <div class="figure-box">
+                            <span class="figure">866.720</span>
+                            <span class="figure-desc">Gebrauchtwagen</span>
+                        </div>
+                        <div class="figure-box">
+                            <span class="figure">16,2 Mrd.</span>
+                            <span class="figure-desc">Umsatz Gebrauchtwagen</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart-container reveal-chart">
+                    <canvas id="chart2024"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="elektro-entwicklung" class="special-section">
+            <h2 class="animated-title">Elektromobilität: Entwicklung 2023/2024</h2>
+            <div class="highlight-box">
+                <p>„Die Diskrepanz bei Elektrofahrzeugen ist bemerkenswert: Während der Neuwagenmarkt mit minus 21,3% deutlich einbricht, verzeichnet der Gebrauchtwagenmarkt ein Plus von 79,8% bei den reinen Stromern."</p>
+            </div>
+            <div class="split-content">
+                <div class="text-content">
+                    <h3>Gegensätzliche Entwicklung bei E-Autos</h3>
+                    <ul class="feature-list">
+                        <li><span class="icon">•</span> Neuwagenmarkt E-Autos: <strong>-21,3%</strong> nach abruptem Förderstopp</li>
+                        <li><span class="icon">•</span> Gebrauchtwagenmarkt E-Autos: <strong>+79,8%</strong> (aber niedriges Niveau)</li>
+                        <li><span class="icon">•</span> Nur 3% aller Gebrauchtwagenkäufe sind Elektrofahrzeuge</li>
+                        <li><span class="icon">•</span> Lediglich 12% der Gebrauchtwagenkäufer erwägen ein E-Auto</li>
+                        <li><span class="icon">•</span> Preisunterschied von 10.000-15.000€ zum Verbrenner als zentrale Hürde</li>
+                    </ul>
+                </div>
+                <div class="chart-container reveal-chart">
+                    <canvas id="elektroEntwicklungChart"></canvas>
+                </div>
+            </div>
+            <div class="data-insights">
+                <div class="insight-item">
+                    <span class="insight-number">66.479</span>
+                    <span class="insight-text">E-Auto Neuzulassungen 2024</span>
+                </div>
+                <div class="insight-item">
+                    <span class="insight-number">25.658</span>
+                    <span class="insight-text">E-Auto Gebrauchtwagen 2024</span>
+                </div>
+                <div class="insight-item">
+                    <span class="insight-number">77%</span>
+                    <span class="insight-text">Der Pkw-Halter planen, länger ihr Auto zu fahren</span>
+                </div>
+                <div class="insight-item">
+                    <span class="insight-number">3</span>
+                    <span class="insight-text">E-Autos unter 20.000€ am Markt verfügbar</span>
+                </div>
+            </div>
+        </section>
+        
+        <section id="comparison" class="special-section">
+            <h2 class="animated-title">Vergleich: Elektromobilität 2024/2025</h2>
+            <div class="highlight-box">
+                <p>„2025 wird das Jahr der Entscheidung, ob die Elektromobilität an Fahrt gewinnt oder ins Stocken gerät."</p>
+            </div>
+            <div class="chart-container large-chart reveal-chart">
+                <canvas id="comparisonChart"></canvas>
+            </div>
+            <div class="split-content">
+                <div class="text-content">
+                    <h3>Prognose E-Mobilität 2025</h3>
+                    <ul class="feature-list">
+                        <li><span class="icon">•</span> Stabile E-Auto-Neuzulassungen erwartet</li>
+                        <li><span class="icon">•</span> Wachstum bei E-Gebrauchtwagen um ca. 50% auf ca. 38.500 Einheiten</li>
+                        <li><span class="icon">•</span> Marktanteil der E-Autos steigt leicht auf 4,25% im Gebrauchtwagenmarkt</li>
+                        <li><span class="icon">•</span> Preiskampf bei Neuwagen könnte Restwerte der E-Autos weiter belasten</li>
+                    </ul>
+                </div>
+                <div class="text-content">
+                    <h3>Herausforderungen</h3>
+                    <ul class="feature-list">
+                        <li><span class="icon">•</span> Unberechenbare Stop-and-Go-Politik bei Kaufanreizen</li>
+                        <li><span class="icon">•</span> Ladeinfrastruktur unzureichend, besonders im ländlichen Raum</li>
+                        <li><span class="icon">•</span> Kundenunsicherheit bezüglich Batterielebensdauer</li>
+                        <li><span class="icon">•</span> Preisunterschied zu Verbrennern kann kaum wettgemacht werden</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="neuwagen-section" class="year-section">
+            <h2 class="animated-title">Neuwagenmarkt 2024</h2>
+            <div class="highlight-box">
+                <p>„Die Transformation findet eindeutig statt, aber sie folgt nicht dem politisch vorgezeichneten Pfad."</p>
+            </div>
+            <div class="split-content">
+                <div class="chart-container reveal-chart">
+                    <canvas id="chartNeuwagenAntriebe"></canvas>
+                </div>
+                <div class="text-content">
+                    <h3>Antriebsarten bei Neuwagen</h3>
+                    <ul class="feature-list">
+                        <li><span class="icon">•</span> Batterie-PKW: 66.479 (-21,3%)</li>
+                        <li><span class="icon">•</span> Plug-in Hybride: 39.770 (+9,8%)</li>
+                        <li><span class="icon">•</span> Hybride ohne Stecker: 113.857 (überholten E-Autos + Plug-ins)</li>
+                        <li><span class="icon">•</span> Benziner und Diesel: zusammen 45,2% Marktanteil (2019 noch 89,9%)</li>
+                        <li><span class="icon">•</span> SUVs dominieren weiterhin mit 43,2% aller Neuzulassungen</li>
+                        <li><span class="icon">•</span> Fast 60% aller Neuwagen sind mit Allradantrieb ausgestattet</li>
+                    </ul>
+                    
+                    <h3>Neuwagenkäuferprofil</h3>
+                    <div class="key-figures count-animation">
+                        <div class="figure-box">
+                            <span class="figure">176 PS</span>
+                            <span class="figure-desc">Durchschnittliche Leistung</span>
+                        </div>
+                        <div class="figure-box">
+                            <span class="figure">46 Jahre</span>
+                            <span class="figure-desc">Durchschnittsalter</span>
+                        </div>
+                        <div class="figure-box">
+                            <span class="figure">77%</span>
+                            <span class="figure-desc">Käufer mit Finanzierung/Leasing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gebrauchtwagen-section" class="year-section">
+            <h2 class="animated-title">Gebrauchtwagenmarkt 2024</h2>
+            <div class="highlight-box">
+                <p>„Der Gebrauchtwagenmarkt ist und bleibt der Ort, wo individuelle Mobilität zu attraktiven Preisen möglich ist – für viele Verbraucher eine wichtige Konstante in unsicheren Zeiten."</p>
+            </div>
+            <div class="split-content reverse">
+                <div class="text-content">
+                    <h3>Entwicklungen bei Gebrauchtwagen</h3>
+                    <ul class="feature-list">
+                        <li><span class="icon">•</span> 866.720 Besitzumschreibungen (+6,6%)</li>
+                        <li><span class="icon">•</span> Fachhändler erhöhten Marktanteil auf 76% (+5 Prozentpunkte)</li>
+                        <li><span class="icon">•</span> Verbrenner dominieren weiter mit 87,4% Marktanteil</li>
+                        <li><span class="icon">•</span> Wirtschaftliche Bedeutung des Gebrauchtwagenmarkts wächst kontinuierlich</li>
+                        <li><span class="icon">•</span> Der Gebrauchtwagenmarkt hat mit 16,2 Milliarden Euro Umsatz den Abstand zum Neuwagenmarkt auf nur noch 9,3 Prozent verkürzt</li>
+                    </ul>
+                    
+                    <h3>Durchschnittspreise nach Verkäufer</h3>
+                    <div class="key-figures count-animation">
+                        <div class="figure-box">
+                            <span class="figure">26.140€</span>
+                            <span class="figure-desc">Markenhandel</span>
+                        </div>
+                        <div class="figure-box">
+                            <span class="figure">13.390€</span>
+                            <span class="figure-desc">Freier Handel</span>
+                        </div>
+                        <div class="figure-box">
+                            <span class="figure">13.070€</span>
+                            <span class="figure-desc">Privatverkauf</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart-container reveal-chart">
+                    <canvas id="chartGebrauchtwagenAntriebe"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="ausbildung-section" class="year-section">
+            <h2 class="animated-title">Ausbildungsbilanz 2024</h2>
+            <div class="highlight-box">
+                <p>„Die Ausbildung eigener Fachkräfte ist und bleibt das beste Rezept gegen den Fachkräftemangel."</p>
+            </div>
+            <div class="split-content">
+                <div class="chart-container reveal-chart">
+                    <canvas id="chartAusbildung"></canvas>
+                </div>
+                <div class="text-content">
+                    <h3>Positive Entwicklung</h3>
+                    <ul class="feature-list">
+                        <li><span class="icon">•</span> 4.584 neue Ausbildungsverträge insgesamt</li>
+                        <li><span class="icon">•</span> 3.249 neue Verträge für Kfz-Mechatroniker (+7,7%)</li>
+                        <li><span class="icon">•</span> 882 neue Verträge für Automobilkaufleute (+1,4%)</li>
+                        <li><span class="icon">•</span> Kfz-Mechatroniker bleibt beliebtester technischer Ausbildungsberuf</li>
+                        <li><span class="icon">•</span> Frauenanteil bei Kfz-Mechatronikern: ~6% (Tendenz steigend)</li>
+                        <li><span class="icon">•</span> Baden-Württemberg liegt über dem bundesweiten Wachstum von 7,2%</li>
+                    </ul>
+                    
+                    <h3>Erfolge</h3>
+                    <div class="key-figures count-animation">
+                        <div class="figure-box">
+                            <span class="figure">1.</span>
+                            <span class="figure-desc">Platz deutscher Kfz-Mechatroniker-Meisterschaft</span>
+                        </div>
+                        <div class="figure-box">
+                            <span class="figure">#SHE</span>
+                            <span class="figure-desc">Kampagne für mehr Frauen</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusion">
+            <h2 class="animated-title">Fazit</h2>
+            <div class="conclusion-box">
+                <p>„Die Marktentwicklungen machen deutlich, dass wir verlässliche Rahmenbedingungen brauchen, um die Herausforderungen erfolgreich zu meistern. Es geht um den Ausbau der Infrastruktur, bezahlbare Angebote seitens der Hersteller und Planungssicherheit – nicht nur für uns als Branche, sondern vor allem für unsere Kunden."</p>
+                <p>Der Automarkt in Baden-Württemberg befindet sich in einer tiefgreifenden Transformation. Während der Gebrauchtwagenmarkt wächst und erstmals über zwei Drittel aller Fahrzeugkäufe ausmachen wird, steht die Elektromobilität an einem kritischen Wendepunkt. Die Kaufbereitschaft für E-Autos ist nach dem abrupten Förderstopp deutlich eingebrochen. Für 2025 sind verlässliche Rahmenbedingungen, bezahlbare Angebote und Planungssicherheit unerlässlich, um die Transformation zu meistern.</p>
+            </div>
+            <div class="cta-container">
+                <a href="03 - Statement Birgit Leicht 1.pdf" download class="cta-button pulse">Vollständiges Statement herunterladen</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 - Basierend auf dem Statement von Birgit Leicht bei der Jahrespressekonferenz in Stuttgart</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
